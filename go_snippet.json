@@ -1,0 +1,27 @@
+{	
+    "Print  Package Main Func ": {
+		"prefix": "pmfm",
+		"body": [
+			"package main",
+			"",
+			"",
+			"func main() {",
+			"",
+			"",
+			"}"
+		],
+		"description": "Create Basic boilerplate for Go program"
+	},
+    
+	"Go package + func from folder & file": {
+		"prefix": "gobase",
+		"body": [
+			"package ${TM_DIRECTORY/(.*[\\\\\\/])([^\\\\\\/]+)$/${2:/downcase}/}",
+			"",
+			"func ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}() {",
+			"\t$0",
+			"}"
+		],
+		"description": "Create Go package from folder name and function from file name"
+	}
+}

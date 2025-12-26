@@ -11,6 +11,15 @@ func main() {
 	x := 43
 
 	fmt.Println("The value of x is:", x)
-	basics.PackageExample()
-	basics.OverflowUnderflow()
+	// 1. PACKAGE EXAMPLE
+	// basics.PackageExample()
+
+	// 2 Over and Under Flow
+	// basics.OverflowUnderflow()
+
+	// 3 Condition and Loop
+	// basics.Loop()
+
+	// 4 Guessing Number Game
+	basics.GuessingNumber()
 }
