@@ -21,5 +21,11 @@ func main() {
 	// basics.Loop()
 
 	// 4 Guessing Number Game
-	basics.GuessingNumber()
+	// basics.GuessingNumber()
+
+	//5 Arrays
+	// basics.Array()
+
+	//6 Slices
+	basics.Slice()
 }
