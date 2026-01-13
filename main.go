@@ -7,25 +7,21 @@ import (
 
 func main() {
 	fmt.Println("Hello, Golang!")
-
-	x := 43
-
-	fmt.Println("The value of x is:", x)
+	/*
 	// 1. PACKAGE EXAMPLE
-	// basics.PackageExample()
-
+	basics.PackageExample()
 	// 2 Over and Under Flow
-	// basics.OverflowUnderflow()
-
+	basics.OverflowUnderflow()
 	// 3 Condition and Loop
-	// basics.Loop()
-
+	basics.Loop()
 	// 4 Guessing Number Game
-	// basics.GuessingNumber()
-
+	basics.GuessingNumber()
 	//5 Arrays
-	// basics.Array()
-
+	 basics.Array()
 	//6 Slices
-	basics.Slice()
+	 basics.Slice()
+	*/
+
+	//7 Function
+	basics.Method()
 }
