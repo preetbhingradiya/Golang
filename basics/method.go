@@ -1,5 +1,7 @@
 package basics
 
+import "errors"
+
 func Method() {
 	/*Structure of function ( return type is optional nad we can have multiple return types using comma(,) separator)
 	func <name> (parameter_list) (return_type){
@@ -30,6 +32,17 @@ func Method() {
 	doubleValue := doubleFunc(15)
 	println("Double Value:", doubleValue)
 
+	//Variadic Function where we can pass multiple values of same type using (...)
+	msg, total := sumAll("Total Sum is 1 + 2 + 3 + 4:", 1, 2, 3, 4)
+	println(msg, total)
+
+	res, err := checkValue(10, 10)
+	if err != nil {
+		println("Error:", err.Error())
+		return
+	}
+	println(res)
+
 	//Directly calling returned function
 	// tripleValue := getMultiplier(3)(20)
 	// println("Triple Value:", tripleValue)
@@ -53,4 +66,23 @@ func getMultiplier(factor int) func(int) int {
 		print("Getting factor value ", factor)
 		return x * factor
 	}
+}
+
+// Return multiple type value
+func checkValue(a, b int) (string, error) {
+	if a > b {
+		return "a is greater", nil
+	} else if a < b {
+		return "b is greater", nil
+	}
+	return "", errors.New("a and b are equal")
+}
+
+//Variadic Function
+func sumAll(str string, numbers ...int) (string, int) {
+	total := 0
+	for _, num := range numbers {
+		total += num
+	}
+	return str, total
 }
