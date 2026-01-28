@@ -1,7 +1,8 @@
 package main
 
 import (
-	"basicsgo/basics"
+	// "basicsgo/basics"
+	"basicsgo/intermediate"
 	"fmt"
 )
 
@@ -24,9 +25,22 @@ func main() {
 		 basics.Method()
 		//8 Defer
 		 basics.Defer()
+		//9 Panic and Recover
+		 basics.Panic()
 	*/
 
-	//9 Panic and Recover
-	basics.Panic()
+	//Intermediate Level
+	/**
+	 //1. Closures
+	 intermediate.Closures()
+	 //2 Pointers
+	 intermediate.Pointer()
+	 //3 Structs
+	 intermediate.Struct()
+	 //4 Interfaces
+	 intermediate.Interface()
+	**/
 
+	//5 Generics
+	intermediate.Generics()
 }
