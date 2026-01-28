@@ -37,8 +37,10 @@ func main() {
 	 intermediate.Pointer()
 	 //3 Structs
 	 intermediate.Struct()
+	 //4 Interfaces
+	 intermediate.Interface()
 	**/
 
-	//4 Interfaces
-	intermediate.Interface()
+	//5 Generics
+	intermediate.Generics()
 }

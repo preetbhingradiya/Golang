@@ -26,6 +26,15 @@ func Interface() {
 
 	measure(r)
 	measure(c)
+
+	//Print the message
+	printMessage("Hello, World!", 42, 3.14, true)
+}
+
+func printMessage(i ...interface{}) {
+	for _, msg := range i {
+		fmt.Println(msg)
+	}
 }
 
 func measure(g geometry) {
