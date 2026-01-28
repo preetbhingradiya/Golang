@@ -33,8 +33,12 @@ func main() {
 	/**
 	 //1. Closures
 	 intermediate.Closures()
+	 //2 Pointers
+	 intermediate.Pointer()
+	 //3 Structs
+	 intermediate.Struct()
 	**/
 
-	//2 Pointers
-	intermediate.Pointer()
+	//4 Interfaces
+	intermediate.Interface()
 }
