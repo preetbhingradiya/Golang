@@ -4,6 +4,7 @@ import (
 	// "basicsgo/basics"
 	"basicsgo/intermediate"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -39,8 +40,16 @@ func main() {
 	 intermediate.Struct()
 	 //4 Interfaces
 	 intermediate.Interface()
+	 //5 Generics
+	 intermediate.Generics()
 	**/
 
-	//5 Generics
-	intermediate.Generics()
+	//6 Custom Error
+	intermediate.CustomError()
+
+	time := time.Now()
+	fmt.Println("Current Time:", time)
+	fmt.Println("Year:", time.Format("2006-01-02"))
+	epoch := time.Unix()
+	fmt.Println("Epoch Time:", epoch)
 }
