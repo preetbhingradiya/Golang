@@ -2,9 +2,9 @@ package main
 
 import (
 	// "basicsgo/basics"
-	"basicsgo/intermediate"
+
 	"fmt"
-	"time"
+	"math/rand"
 )
 
 func main() {
@@ -42,14 +42,23 @@ func main() {
 	 intermediate.Interface()
 	 //5 Generics
 	 intermediate.Generics()
+	 //6 Custom Error
+	 intermediate.CustomError()
+	 //7 URL Parsing
+	 intermediate.UrlParsing()
+
+	 intermediate.DiceGame()
 	**/
 
-	//6 Custom Error
-	intermediate.CustomError()
+	// time := time.Now()
+	// fmt.Println("Current Time:", time)
+	// fmt.Println("Year:", time.Format("2006-01-02"))
+	// epoch := time.Unix()
+	// fmt.Println("Epoch Time:", epoch)
 
-	time := time.Now()
-	fmt.Println("Current Time:", time)
-	fmt.Println("Year:", time.Format("2006-01-02"))
-	epoch := time.Unix()
-	fmt.Println("Epoch Time:", epoch)
+	fmt.Print(rand.Intn(101)) // Generates a random number between 0 and 100
+
+	val := rand.New(rand.NewSource(42)) //fixed seed for reproducibility
+	fmt.Print(val.Intn(101))
+
 }
