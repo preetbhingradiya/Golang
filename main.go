@@ -2,8 +2,10 @@ package main
 
 import (
 	// "basicsgo/basics"
+
 	"basicsgo/intermediate"
 	"fmt"
+	"math/rand"
 )
 
 func main() {
@@ -39,8 +41,40 @@ func main() {
 	 intermediate.Struct()
 	 //4 Interfaces
 	 intermediate.Interface()
+	 //5 Generics
+	 intermediate.Generics()
+	 //6 Custom Error
+	 intermediate.CustomError()
+	 //7 URL Parsing
+	 intermediate.UrlParsing()
+	 //8 Bufio Example
+	 intermediate.BufioExample()
+	 //9 Cryptography
+	 intermediate.Crypt()
+	 //10 file handling
+	 // file.WriteFile()
+	 // file.ReadFile()
+	 // file.FilePath()
+	 //11. Environment Variables
+	 intermediate.EnvVariable()
+	 //12. JSON Data
+	 intermediate.DiceGame()
+
+	 intermediate.JsonData()
 	**/
 
-	//5 Generics
-	intermediate.Generics()
+	//13 IO Package
+	intermediate.IoPackage()
+
+	// time := time.Now()
+	// fmt.Println("Current Time:", time)
+	// fmt.Println("Year:", time.Format("2006-01-02"))
+	// epoch := time.Unix()
+	// fmt.Println("Epoch Time:", epoch)
+
+	fmt.Print(rand.Intn(101)) // Generates a random number between 0 and 100
+
+	val := rand.New(rand.NewSource(42)) //fixed seed for reproducibility
+	fmt.Print(val.Intn(101))
+
 }
