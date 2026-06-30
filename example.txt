@@ -1,0 +1,4 @@
+Hello, this is a test string for writing to a file.
+Open same file and add some new text
+Open same file and add some new text
+Open same file and add some new text

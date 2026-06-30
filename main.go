@@ -3,6 +3,7 @@ package main
 import (
 	// "basicsgo/basics"
 
+	"basicsgo/intermediate"
 	"fmt"
 	"math/rand"
 )
@@ -46,9 +47,24 @@ func main() {
 	 intermediate.CustomError()
 	 //7 URL Parsing
 	 intermediate.UrlParsing()
-
+	 //8 Bufio Example
+	 intermediate.BufioExample()
+	 //9 Cryptography
+	 intermediate.Crypt()
+	 //10 file handling
+	 // file.WriteFile()
+	 // file.ReadFile()
+	 // file.FilePath()
+	 //11. Environment Variables
+	 intermediate.EnvVariable()
+	 //12. JSON Data
 	 intermediate.DiceGame()
+
+	 intermediate.JsonData()
 	**/
+
+	//13 IO Package
+	intermediate.IoPackage()
 
 	// time := time.Now()
 	// fmt.Println("Current Time:", time)
